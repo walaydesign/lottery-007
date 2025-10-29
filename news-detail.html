@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>運彩007</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header_logo"
+        ><img src="./public/img/logo.svg" alt=""
+      /></a>
+      <nav class="header_nav">
+        <ul>
+          <li>
+            <a href="./index.html" class="header_nav_item">首頁</a>
+          </li>
+          <li>
+            <a href="./news.html" class="header_nav_item active">賽事新聞</a>
+          </li>
+          <li>
+            <a href="./buy.html" class="header_nav_item">方案購買</a>
+          </li>
+          <li class="m-0 d-lg-block d-none line">
+            <a
+              class="btn-line"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-qrcode"
+            >
+              <img class="header_icon" src="./public/img/line.svg" alt="" />
+              <span class="header_nav_text">加line送場次</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex d-lg-none">
+        <a
+          class="btn-line"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-qrcode"
+        >
+          <img class="header_icon" src="./public/img/line.svg" alt="" />
+          <span class="header_nav_text">加line送場次</span>
+        </a>
+        <div class="header_menu d-lg-none">
+          <div class="header_menu_inner">
+            <div class="header_menu_bar bar-top"></div>
+            <div class="header_menu_bar bar-middle"></div>
+            <div class="header_menu_bar bar-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div class="swiper-container banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-1.png" alt="" />
+                <div class="banner_title">
+                  <h1 class="container">
+                    不靠運氣靠勝率<br />反敗致富<span class="highlight"
+                      >你自己做主</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-2.png" alt="" />
+                <div class="banner_title text-right">
+                  <h1 class="container">
+                    掌握獲利趨勢<br />讓你<span class="highlight"
+                      >百發百中</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-3.png" alt="" />
+                <div class="banner_title">
+                  <h1 class="container">
+                    關鍵時刻 不要猶豫<br />莊家剋星<span class="highlight"
+                      >非我莫屬</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="banner_mask" src="./public/img/banner-mask.svg" alt="" />
+      </div>
+
+      <div class="mainContent">
+        <div class="container">
+          <div class="sidebar sidebar--login">
+            <h2 class="title">會員登入</h2>
+            <div class="row">
+              <div class="col-lg-12 col-md-8">
+                <div class="sidebar_account">
+                  <form action="" class="login">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/account.svg" alt="" />
+                      </div>
+                      <input type="text" placeholder="帳號..." />
+                    </div>
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/password.svg" alt="" />
+                      </div>
+                      <input type="text" placeholder="密碼..." />
+                    </div>
+                    <div class="login_btn">
+                      <a href="">註冊</a>
+                      <button class="btn btn-bg-white">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#DE5B16"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>登入</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-4">
+                <img class="sidebar_img" src="./public/img/qrcode.png" alt="" />
+                <img class="sidebar_img" src="./public/img/ad.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mainbar">
+            <div class="mainbar_sec">
+              <div class="news-detail">
+                <button class="btn-back">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.8334 10H4.16669"
+                      stroke="#AE101E"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 15.8333L4.16669 9.99996L10 4.16663"
+                      stroke="#AE101E"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>上一頁</span>
+                </button>
+                <div class="news-detail_content">
+                  <h2>
+                    友多愛請穿早乍九交竹那動飛着千五唱，手人八跳京寫鳥浪，荷住雨吉明冬耍反那，記再瓜青合北貝方八旦民男幫助地貓口能
+                  </h2>
+                  <p class="news-detail_date"><span>2025/04/24</span></p>
+                  <p class="news-detail_text">
+                    胡月神現羊半封話長空三給大。
+                    她每乾成細里足息刀早牙寫彩見根？眼勿春女耍，步成事。走神棵詞公馬高唱安手且足喜買兒陽的燈時。王告兄隻。
+                    請免教祖歡詞家，經寺半耍日娘片風牠：早千目祖才央棵急山頁長服裏葉，有國斤老至年里住植字？占力故音八現要，足心封祖物只。
+                    頁犬澡前；木連貫雲定不鴨發您有京良棵雲字甲去小？吧和在兆有以金們抓開品眼。個斤合只尺樹息京巴幼海右去珠經公，害念弟戊尤燈。
+                    馬怕只面九七的夕學根、月貝太昌公多花老毛「村放葉成」您想壯步頁來。食干羽土太兄圓，枝問喜。告訴固連戶牛朋玩進村支得乞父放，汁室愛！乙尾道過飽新孝玉問星力青，牛流浪「羊」聲話。
+                    告主鼻跟了黃肖在了爸飽兔眼習肖就因合遠衣：更和想童候完那重肖，雨蝸植吉小借瓜相，乾力間娘朋「紅沒因交辛布亮問民鳥」。
+                    到活雪服瓜遠到北陽洋好快休小假！跳視加清心的己水元交長那開雪一羊入干抱寺。怪力把畫荷香幾裝回會那跑您喝門怕公忍裝，助清語陽兌棵愛許冬七生。欠衣英。
+                    央借心貝巾借。白娘交昔哭科行才主故亭告少條房許，午浪才眼校力氣結讀綠，喜九
+                  </p>
+                  <img
+                    src="./public/img/neom-r4ZSR0cKJw8-unsplash 1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      網站內容屬資訊性質，提供資料僅供瀏覽者作參考用途，切勿參與賭博觸犯法例，請勿以身試法。<br />
+      本站提供您的內容請勿任意轉載或複製。提醒您：進入本站、參與運動彩劵者需年滿20歲，未滿者不得加入行使任何會員之權利
+    </footer>
+
+    <div
+      class="modal fade modal-qrcode"
+      id="modal-qrcode"
+      tabindex="-1"
+      aria-labelledby="modal-qrcodeLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="modal-x" data-bs-dismiss="modal" aria-label="Close">
+            <img src="./public/img/x.svg" alt="" />
+          </button>
+          <img class="qrcode" src="./public/img/qrcode.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>

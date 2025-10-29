@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>運彩007</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header_logo"
+        ><img src="./public/img/logo.svg" alt=""
+      /></a>
+      <nav class="header_nav">
+        <ul>
+          <li>
+            <a href="./index.html" class="header_nav_item">首頁</a>
+          </li>
+          <li>
+            <a href="./news.html" class="header_nav_item">賽事新聞</a>
+          </li>
+          <li>
+            <a href="./buy.html" class="header_nav_item">方案購買</a>
+          </li>
+          <li class="m-0 d-lg-block d-none line">
+            <a
+              class="btn-line"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-qrcode"
+            >
+              <img class="header_icon" src="./public/img/line.svg" alt="" />
+              <span class="header_nav_text">加line送場次</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex d-lg-none">
+        <a
+          class="btn-line"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-qrcode"
+        >
+          <img class="header_icon" src="./public/img/line.svg" alt="" />
+          <span class="header_nav_text">加line送場次</span>
+        </a>
+        <div class="header_menu d-lg-none">
+          <div class="header_menu_inner">
+            <div class="header_menu_bar bar-top"></div>
+            <div class="header_menu_bar bar-middle"></div>
+            <div class="header_menu_bar bar-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div class="swiper-container banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-1.png" alt="" />
+                <div class="banner_title">
+                  <h1 class="container">
+                    不靠運氣靠勝率<br />反敗致富<span class="highlight"
+                      >你自己做主</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-2.png" alt="" />
+                <div class="banner_title text-right">
+                  <h1 class="container">
+                    掌握獲利趨勢<br />讓你<span class="highlight"
+                      >百發百中</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-3.png" alt="" />
+                <div class="banner_title">
+                  <h1 class="container">
+                    關鍵時刻 不要猶豫<br />莊家剋星<span class="highlight"
+                      >非我莫屬</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="banner_mask" src="./public/img/banner-mask.svg" alt="" />
+      </div>
+
+      <div class="mainContent">
+        <div class="container">
+          <div class="sidebar sidebar--login">
+            <h2 class="title">會員登入</h2>
+            <div class="row">
+              <div class="col-lg-12 col-md-8">
+                <div class="sidebar_account">
+                  <form action="" class="login">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/account.svg" alt="" />
+                      </div>
+                      <input type="text" placeholder="帳號..." />
+                    </div>
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/password.svg" alt="" />
+                      </div>
+                      <input type="password" placeholder="密碼..." />
+                    </div>
+                    <div class="login_btn">
+                      <a href="./signup.html">註冊</a>
+                      <button class="btn btn-bg-white">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#DE5B16"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>登入</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-4">
+                <img class="sidebar_img" src="./public/img/qrcode.png" alt="" />
+                <img class="sidebar_img" src="./public/img/ad.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mainbar">
+            <div class="mainbar_sec">
+              <button class="btn-back">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8334 10H4.16669"
+                    stroke="#AE101E"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 15.8333L4.16669 9.99996L10 4.16663"
+                    stroke="#AE101E"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>上一頁</span>
+              </button>
+              <h2 class="inner-title">會員註冊</h2>
+              <form action="" class="form-signup">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/mobile.svg" alt="" />
+                      </div>
+                      <input type="text" placeholder="手機" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/account-white.svg" alt="" />
+                      </div>
+                      <input type="text" placeholder="暱稱" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/password-white.svg" alt="" />
+                      </div>
+                      <input type="password" placeholder="密碼" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/password-white.svg" alt="" />
+                      </div>
+                      <input type="password" placeholder="確認密碼" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-item">
+                      <div class="input-item_icon">
+                        <img src="./public/img/line-2.svg" alt="" />
+                      </div>
+                      <input type="text" placeholder="Line" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="agree" />
+                      <label for="agree">已閱讀相關條款 同意註冊</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="term">
+                  <h3>運彩007會員服務同意書條款</h3>
+                  <ol>
+                    <li>
+                      運彩007運動分析網所提供資訊與數據，僅供會員參考討論，不引導會員參與賭博之行為。
+                    </li>
+                    <li>
+                      請依註冊申請程序所提示之項目，登錄您本人正確、真實及完整之個人資料。當您的個人資料。如因您登錄不實資料或冒用他人名義以致於侵害他人之權利或違法時，應自負法律責任。
+                    </li>
+                    <li>
+                      本站會員加值購買方案，經過再度確認後購買，則一律不予退費。
+                    </li>
+                    <li>
+                      您註冊完成後將會取得一組帳號及密碼，您有義務妥善保管您的帳號及密碼之機密與安全，不得洩漏給任何第三人。您必須為此組帳號及密碼之一切行為負責，此組帳號及密碼所做之一切行為即視為您本身之行為。
+                    </li>
+                    <li>
+                      未滿18歲請勿購買彩卷，參與地下賭博是非法行為，請勿以身試法。
+                    </li>
+                  </ol>
+                </div>
+                <button class="btn btn-bg-primary">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 12L10 8L6 4"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>註冊</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      網站內容屬資訊性質，提供資料僅供瀏覽者作參考用途，切勿參與賭博觸犯法例，請勿以身試法。<br />
+      本站提供您的內容請勿任意轉載或複製。提醒您：進入本站、參與運動彩劵者需年滿20歲，未滿者不得加入行使任何會員之權利
+    </footer>
+
+    <div
+      class="modal fade modal-qrcode"
+      id="modal-qrcode"
+      tabindex="-1"
+      aria-labelledby="modal-qrcodeLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="modal-x" data-bs-dismiss="modal" aria-label="Close">
+            <img src="./public/img/x.svg" alt="" />
+          </button>
+          <img class="qrcode" src="./public/img/qrcode.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>

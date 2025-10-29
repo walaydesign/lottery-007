@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>運彩007</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header_logo"
+        ><img src="./public/img/logo.svg" alt=""
+      /></a>
+      <nav class="header_nav">
+        <ul>
+          <li>
+            <a href="./index.html" class="header_nav_item">首頁</a>
+          </li>
+          <li>
+            <a href="./news.html" class="header_nav_item">賽事新聞</a>
+          </li>
+          <li>
+            <a href="./buy-login.html" class="header_nav_item active"
+              >方案購買</a
+            >
+          </li>
+          <li>
+            <a href="./record.html" class="header_nav_item">儲值紀錄</a>
+          </li>
+          <li class="m-0 d-lg-block d-none line">
+            <a
+              class="btn-line"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-qrcode"
+            >
+              <img class="header_icon" src="./public/img/line.svg" alt="" />
+              <span class="header_nav_text">加line送場次</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex d-lg-none">
+        <a
+          class="btn-line"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-qrcode"
+        >
+          <img class="header_icon" src="./public/img/line.svg" alt="" />
+          <span class="header_nav_text">加line送場次</span>
+        </a>
+        <div class="header_menu d-lg-none">
+          <div class="header_menu_inner">
+            <div class="header_menu_bar bar-top"></div>
+            <div class="header_menu_bar bar-middle"></div>
+            <div class="header_menu_bar bar-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div class="swiper-container banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-1.png" alt="" />
+                <div class="banner_title">
+                  <h1 class="container">
+                    不靠運氣靠勝率<br />反敗致富<span class="highlight"
+                      >你自己做主</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-2.png" alt="" />
+                <div class="banner_title text-right">
+                  <h1 class="container">
+                    掌握獲利趨勢<br />讓你<span class="highlight"
+                      >百發百中</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner_item">
+                <img src="./public/img/banner-3.png" alt="" />
+                <div class="banner_title">
+                  <h1 class="container">
+                    關鍵時刻 不要猶豫<br />莊家剋星<span class="highlight"
+                      >非我莫屬</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="banner_mask" src="./public/img/banner-mask.svg" alt="" />
+      </div>
+
+      <div class="mainContent">
+        <div class="container">
+          <div class="sidebar">
+            <div class="row">
+              <div class="col-lg-12 col-md-8">
+                <div class="sidebar_account">
+                  <p>大支，您好！</p>
+                  <button class="btn btn-bg-white">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 12L10 8L6 4"
+                        stroke="#DE5B16"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span>登出</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-4">
+                <img class="sidebar_img" src="./public/img/qrcode.png" alt="" />
+                <img class="sidebar_img" src="./public/img/ad.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mainbar">
+            <div class="mainbar_sec">
+              <h1 class="title">方案購買</h1>
+              <div class="buy buy--case">
+                <div class="buy_item">
+                  <div class="product-pic">
+                    <img src="./public/img/product-1.png" alt="" />
+                    <h2>
+                      <span>縱</span><span>橫</span><span>天</span
+                      ><span>下</span>
+                    </h2>
+                  </div>
+                  <div class="buy_text">
+                    <h2 class="buy_name">縱橫天下</h2>
+                    <div class="buy_btn">
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">$1680 / 1場</option>
+                        <option value="">$4580 / 3場</option>
+                        <option value="">$6680 / 5場</option>
+                      </select>
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇付款方式</option>
+                        <option value="">7-11繳費</option>
+                        <option value="">全家繳費</option>
+                        <option value="">ATM匯款</option>
+                      </select>
+                      <button class="btn btn-bg-primary">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#ffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>購買</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy_item">
+                  <div class="product-pic">
+                    <img src="./public/img/product-2.png" alt="" />
+                      <h2>
+                        <span>最</span><span>高</span><span>機</span
+                        ><span>密</span>
+                      </h2>
+                  </div>
+                  <div class="buy_text">
+                    <h2 class="buy_name">最高機密</h2>
+                    <div class="buy_btn">
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">$1680 / 1場</option>
+                        <option value="">$4580 / 3場</option>
+                        <option value="">$6680 / 5場</option>
+                      </select>
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇付款方式</option>
+                        <option value="">7-11繳費</option>
+                        <option value="">全家繳費</option>
+                        <option value="">ATM匯款</option>
+                      </select>
+                      <button class="btn btn-bg-primary">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#ffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>購買</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy_item">
+                  <div class="product-pic">
+                    <img src="./public/img/product-3.png" alt="" />
+                      <h2>
+                        <span>關</span><span>鍵</span><span>時</span
+                        ><span>刻</span>
+                      </h2>
+                  </div>
+                  <div class="buy_text">
+                    <h2 class="buy_name">關鍵報告</h2>
+                    <div class="buy_btn">
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">$1680 / 1場</option>
+                        <option value="">$4580 / 3場</option>
+                        <option value="">$6680 / 5場</option>
+                      </select>
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇付款方式</option>
+                        <option value="">7-11繳費</option>
+                        <option value="">全家繳費</option>
+                        <option value="">ATM匯款</option>
+                      </select>
+                      <button class="btn btn-bg-primary">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#ffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>購買</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy_item">
+                  <div class="product-pic">
+                    <img src="./public/img/product-4.png" alt="" />
+                      <h2>
+                        <span>終</span><span>極</span><span>任</span
+                        ><span>務</span>
+                      </h2>
+                  </div>
+                  <div class="buy_text">
+                    <h2 class="buy_name">終極任務</h2>
+                    <div class="buy_btn">
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">$1680 / 1場</option>
+                        <option value="">$4580 / 3場</option>
+                        <option value="">$6680 / 5場</option>
+                      </select>
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇付款方式</option>
+                        <option value="">7-11繳費</option>
+                        <option value="">全家繳費</option>
+                        <option value="">ATM匯款</option>
+                      </select>
+                      <button class="btn btn-bg-primary">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#ffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>購買</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy_item">
+                  <div class="product-pic">
+                    <img src="./public/img/product-5.png" alt="" />
+                      <h2>
+                        <span>王</span><span>牌</span><span>對</span
+                        ><span>決</span>
+                      </h2>
+                  </div>
+                  <div class="buy_text">
+                    <h2 class="buy_name">王牌對決</h2>
+                    <div class="buy_btn">
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">$1680 / 1場</option>
+                        <option value="">$4580 / 3場</option>
+                        <option value="">$6680 / 5場</option>
+                      </select>
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇付款方式</option>
+                        <option value="">7-11繳費</option>
+                        <option value="">全家繳費</option>
+                        <option value="">ATM匯款</option>
+                      </select>
+                      <button class="btn btn-bg-primary">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#ffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>購買</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="buy_item">
+                  <div class="product-pic">
+                    <img src="./public/img/product-6.png" alt="" />
+                      <h2>
+                        <span>偷</span><span>天</span><span>換</span
+                        ><span>日</span>
+                      </h2>
+                  </div>
+                  <div class="buy_text">
+                    <h2 class="buy_name">偷天換日</h2>
+                    <div class="buy_btn">
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">$1680 / 1場</option>
+                        <option value="">$4580 / 3場</option>
+                        <option value="">$6680 / 5場</option>
+                      </select>
+                      <select class="buy_select" name="" id="">
+                        <option value="">請選擇付款方式</option>
+                        <option value="">7-11繳費</option>
+                        <option value="">全家繳費</option>
+                        <option value="">ATM匯款</option>
+                      </select>
+                      <button class="btn btn-bg-primary">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 12L10 8L6 4"
+                            stroke="#ffffff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>購買</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      網站內容屬資訊性質，提供資料僅供瀏覽者作參考用途，切勿參與賭博觸犯法例，請勿以身試法。<br />
+      本站提供您的內容請勿任意轉載或複製。提醒您：進入本站、參與運動彩劵者需年滿20歲，未滿者不得加入行使任何會員之權利
+    </footer>
+
+    <div
+      class="modal fade modal-qrcode"
+      id="modal-qrcode"
+      tabindex="-1"
+      aria-labelledby="modal-qrcodeLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="modal-x" data-bs-dismiss="modal" aria-label="Close">
+            <img src="./public/img/x.svg" alt="" />
+          </button>
+          <img class="qrcode" src="./public/img/qrcode.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>
