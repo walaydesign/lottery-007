@@ -221,6 +221,11 @@ img {
   gap: 8px;
   color: #ffffff;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.header .btn-line:hover {
+  opacity: 0.7;
 }
 
 .header_menu {
@@ -570,7 +575,7 @@ main {
   top: 75px;
   left: 20px;
   background-color: #de5b16;
-  padding: 40px 24px 16px;
+  padding: 40px 24px;
   border-radius: 0 40px 0 0;
   z-index: 5;
 }
@@ -601,7 +606,12 @@ main {
   max-width: 200px;
   width: 100%;
   border-radius: 12px;
-  margin: 0 auto 24px;
+  margin: 0 auto;
+}
+
+.sidebar .line-id {
+  color: #ffffff;
+  margin: 8px 0 24px;
 }
 
 .sidebar .login {
@@ -681,6 +691,13 @@ main {
   .sidebar--login {
     margin-top: 40px;
   }
+}
+
+.line-id {
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  font-weight: 500;
+  color: #59524e;
 }
 
 @-webkit-keyframes sidebar-highlight {
@@ -815,6 +832,8 @@ main {
      object-fit: cover;
   top: 0;
   left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product-pic > h2 {
@@ -861,6 +880,11 @@ main {
 .product-pic > h2 span:nth-child(4) {
   -webkit-animation: product-text-4 3s ease-in-out infinite normal;
           animation: product-text-4 3s ease-in-out infinite normal;
+}
+
+.product-pic:hover > img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media screen and (max-width: 575px) {
@@ -1057,15 +1081,11 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 100%;
+  height: 71px;
 }
 
 .table-common td:first-child span {
   border-radius: 20px 0 0 0;
-}
-
-.table-common td:last-child {
-  height: 100%;
 }
 
 .table-common td.table_date {
@@ -1108,6 +1128,10 @@ main {
 .table-common td.table_predict .btn:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.table-common td.table_result {
+  height: 100%;
 }
 
 .table-common td.table_result .result_inner {
@@ -1159,10 +1183,25 @@ main {
   margin: 0 auto;
 }
 
+.table-common--notlogin td {
+  height: 1px;
+}
+
+.table-common--notlogin.table_predict {
+  height: 100%;
+}
+
+.table-common--notlogin.table_result {
+  width: 1px;
+}
+
 @media screen and (max-width: 991px) {
   .table-common th,
   .table-common td {
     font-size: 11px;
+  }
+  .table-common td > span {
+    height: 66px;
   }
   .table-common td.table_result img {
     width: 25px;
@@ -1585,6 +1624,10 @@ main {
   background-color: #f9f5f2;
 }
 
+.modal-qrcode .modal-content .line-id {
+  margin-top: 12px;
+}
+
 .modal-qrcode .modal-content .modal-x {
   width: 24px;
   height: 24px;
@@ -1936,7 +1979,7 @@ main {
   content: "";
   width: 1px;
   height: 18px;
-  background-color: #c1c1c1;
+  background-color: #C1C1C1;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);

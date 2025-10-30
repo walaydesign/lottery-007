@@ -5,12 +5,7 @@ $font-mukta: "Mukta", sans-serif;
 $font-serif: "Noto Serif TC", serif;
 $primary: #de5b16;
 $text: #444444;
-
-$border: #d8d8d8;
 $white: #ffffff;
-$gray-bg: #f6f6f6;
-$gray-text: #c1c1c1;
-
 $bg: #f9f5f2;
 $dark: #59524e;
 $secondary: #edaf38;
@@ -179,6 +174,10 @@ img {
     gap: 8px;
     color: $white;
     font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   &_menu {
     width: 60px;
@@ -479,7 +478,7 @@ main {
   top: 75px;
   left: 20px;
   background-color: $primary;
-  padding: 40px 24px 16px;
+  padding: 40px 24px;
   border-radius: 0 40px 0 0;
   z-index: 5;
   .title {
@@ -504,7 +503,11 @@ main {
     max-width: 200px;
     width: 100%;
     border-radius: 12px;
-    margin: 0 auto 24px;
+    margin: 0 auto;
+  }
+  .line-id {
+    color: $white;
+    margin: 8px 0 24px;
   }
   .login {
     padding-top: 32px;
@@ -552,6 +555,13 @@ main {
       margin-top: 40px;
     }
   }
+}
+
+.line-id {
+  text-align: center;
+  font-family: $font-mukta;
+  font-weight: 500;
+  color: $dark;
 }
 
 @keyframes sidebar-highlight {
@@ -644,6 +654,7 @@ main {
     object-fit: cover;
     top: 0;
     left: 0;
+    transition: $transition;
   }
   > h2 {
     position: absolute;
@@ -673,6 +684,11 @@ main {
       &:nth-child(4) {
         animation: product-text-4 3s ease-in-out infinite normal;
       }
+    }
+  }
+  &:hover {
+    >img {
+      transform: scale(1.2);
     }
   }
   @media screen and (max-width: 575px) {
@@ -787,16 +803,17 @@ main {
       align-items: center;
       justify-content: center;
       text-align: center;
-      height: 100%;
+      // height: 100%;
+      height: 71px;
     }
     &:first-child {
       span {
         border-radius: 20px 0 0 0;
       }
     }
-    &:last-child {
-      height: 100%;
-    }
+    // &:last-child {
+    //   height: 100%;
+    // }
     &.table {
       &_date {
         color: #d99b25;
@@ -829,6 +846,7 @@ main {
         }
       }
       &_result {
+        height: 100%;
         .result {
           &_inner {
             width: 35px;
@@ -872,12 +890,28 @@ main {
     width: 30px;
     margin: 0 auto;
   }
+  &--notlogin {
+    td {
+      height: 1px;
+    }
+    &.table {
+      &_predict {
+        height: 100%;
+      }
+      &_result {
+        width: 1px;
+      }
+    }
+  }
   @media screen and (max-width: 991px) {
     th,
     td {
       font-size: 11px;
     }
     td {
+      >span {
+        height: 66px;
+      }
       &.table_result {
         img {
           width: 25px;
@@ -1230,6 +1264,9 @@ main {
     padding: 56px;
     border-radius: 32px;
     background-color: $bg;
+    .line-id {
+      margin-top: 12px;
+    }
     .modal-x {
       width: 24px;
       height: 24px;
@@ -1497,7 +1534,7 @@ main {
           content: "";
           width: 1px;
           height: 18px;
-          background-color: $gray-text;
+          background-color: #C1C1C1;
           top: 50%;
           right: 0;
           transform: translateY(-50%);
